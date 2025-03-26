@@ -62,6 +62,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+             "proxyConfig": "src/proxy.conf.json"
+           },
           "configurations": {
             "production": {
               "buildTarget": "bodymetric-web:build:production"
@@ -97,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "6e47b3c7-62a0-40ad-b216-363f2bc5b72e"
   }
 }
